@@ -35,54 +35,6 @@
         "lng": 13.376933665713324
       },
       "id": "98443197"
-    },
-    {
-      "id": "6a36",
-      "cityName": "London",
-      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "emoji": "🇬🇧",
-      "date": "2024-06-13T00:00:29.265Z",
-      "notes": "Lovely experience",
-      "position": {
-        "lat": "51.50874245880335",
-        "lng": "-0.17578125"
-      }
-    },
-    {
-      "id": "854e",
-      "cityName": "Denmark",
-      "country": "Denmark",
-      "emoji": "🇩🇰",
-      "date": "2024-04-10T00:06:28.000Z",
-      "notes": "Wonderful",
-      "position": {
-        "lat": "55.665193184436035",
-        "lng": "10.04150390625"
-      }
-    },
-    {
-      "id": "575b",
-      "cityName": "Le Magny",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2024-07-31T00:10:25.000Z",
-      "notes": "Beautiful city",
-      "position": {
-        "lat": "46.55886030311719",
-        "lng": "1.9555664062500002"
-      }
-    },
-    {
-      "id": "4455",
-      "cityName": "Terni",
-      "country": "Italy",
-      "emoji": "🇮🇹",
-      "date": "2024-06-09T00:11:38.000Z",
-      "notes": "Mind blowing",
-      "position": {
-        "lat": "42.601619944327965",
-        "lng": "12.63427734375"
-      }
     }
   ]
 }
