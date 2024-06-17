@@ -35,6 +35,30 @@
         "lng": 13.376933665713324
       },
       "id": "98443197"
+    },
+    {
+      "id": "3b1d",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2024-06-17T10:48:03.968Z",
+      "notes": "An amazing City",
+      "position": {
+        "lat": "51.536085601784755",
+        "lng": "0.26367187500000006"
+      }
+    },
+    {
+      "id": "f04a",
+      "cityName": "Kwali",
+      "country": "Nigeria",
+      "emoji": "🇳🇬",
+      "date": "2024-06-17T10:48:34.508Z",
+      "notes": "Trenches",
+      "position": {
+        "lat": "8.776510716052352",
+        "lng": "7.119140625"
+      }
     }
   ]
 }

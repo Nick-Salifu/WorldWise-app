@@ -1,18 +1,31 @@
+import { Suspense, lazy } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
-import Product from "./pages/Product";
-import Pricing from "./pages/Pricing";
-import Homepage from "./pages/Homepage";
-import PageNotFound from "./pages/PageNotFound";
-import AppLayout from "./pages/AppLayout";
-import Login from "./pages/Login";
+import { CitiesProvider } from "./contexts/CitiesContext";
+import { AuthProvider } from "./contexts/FakeAuthContext";
+import PreventRoute from "./pages/PreventRoute";
+
 import CityList from "./components/CityList";
 import CountryList from "./components/CountryList";
 import City from "./components/City";
 import Form from "./components/Form";
-import { CitiesProvider } from "./contexts/CitiesContext";
-import { AuthProvider } from "./contexts/FakeAuthContext";
-import PreventRoute from "./pages/PreventRoute";
+import SpinnerFullPage from "./components/SpinnerFullPage";
+
+// import Product from "./pages/Product";
+// import Pricing from "./pages/Pricing";
+// import Homepage from "./pages/Homepage";
+// import PageNotFound from "./pages/PageNotFound";
+// import AppLayout from "./pages/AppLayout";
+// import Login from "./pages/Login";
+
+const Homepage = lazy(() => import('./pages/Homepage'));
+const Pricing = lazy(() => import('./pages/Pricing'));
+const Product = lazy(() => import('./pages/Product'));
+const Login = lazy(() => import('./pages/Login'));
+const AppLayout = lazy(() => import('./pages/AppLayout'));
+const PageNotFound = lazy(() => import('./pages/PageNotFound'));
+
+
 
 
   export default function App() {
@@ -21,6 +34,7 @@ import PreventRoute from "./pages/PreventRoute";
     <AuthProvider>
     <CitiesProvider>
       <BrowserRouter>
+        <Suspense fallback={<SpinnerFullPage />}>
         <Routes>
           <Route index element={<Homepage />} />
           <Route path="product" element={<Product />} />
@@ -35,6 +49,7 @@ import PreventRoute from "./pages/PreventRoute";
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>
+        </Suspense> 
       </BrowserRouter>
       </CitiesProvider>
       </AuthProvider>
